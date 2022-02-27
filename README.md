@@ -41,7 +41,7 @@ The data is available at https://www.kaggle.com/nicapotato/womens-ecommerce-clot
     -  Build train and test datasets
 
 <p align="center">
-<image src="Notebooks/images/1.png" width=500px/>
+<image src="Notebooks/images/1.png" width=400px/>
 </p>
 
   - **Experiment 1: Basic NLP Count based Features & Age, Feedback Count**
@@ -55,7 +55,7 @@ The data is available at https://www.kaggle.com/nicapotato/womens-ecommerce-clot
     - Training a Logistic Regression Model
 
 <p align="center">
-<image src="Notebooks/images/2.png" width=500px/>
+<image src="Notebooks/images/2.png" width=400px/>
 </p>
 
   - **Experiment 2: Features from Sentiment Analysis**
@@ -71,7 +71,7 @@ The polarity score is a float within the range [-1.0, 1.0].
 The subjectivity is a float within the range [0.0, 1.0] where 0.0 is very objective and 1.0 is very subjective.
 
 <p align="center">
-<image src="Notebooks/images/3.png" width=500px/>
+<image src="Notebooks/images/3.png" width=400px/>
 </p>
 
   - **Text Pre-processing and Wrangling**
@@ -93,33 +93,33 @@ The bag of words model represents each text document as a numeric vector where e
 The model’s name is such because each document is represented literally as a ‘bag’ of its own words, disregarding word orders, sequences and grammar.
 
 <p align="center">
-<image src="Notebooks/images/4.png" width=500px/>
+<image src="Notebooks/images/4.png" width=400px/>
 </p>
 
   - **Experiment 4: Modeling with Bag of Words based Features - 2-grams**
 
 <p align="center">
-<image src="Notebooks/images/5.png" width=500px/>
+<image src="Notebooks/images/5.png" width=400px/>
 </p>
 
   - **Experiment 5: Adding Bag of Words based Features - 3-grams**
 
 <p align="center">
-<image src="Notebooks/images/6.png" width=500px/>
+<image src="Notebooks/images/6.png" width=400px/>
 </p>
 
   - **Experiment 6: Adding Bag of Words based Features - 3-grams with Feature Selection**
     - We drop all words \ n-grams which occur less than 3 times in all documents.
 
 <p align="center">
-<image src="Notebooks/images/7.png" width=500px/>
+<image src="Notebooks/images/7.png" width=400px/>
 </p>
 
   - **Experiment 7: Combining Bag of Words based Features - 3-grams with Feature Selection and the Structured Features**
     - Let's combine our sparse BOW feature matrices with our structured features from earlier. To do this concatenation, We do need to convert those structured features into sparse format.
 
 <p align="center">
-<image src="Notebooks/images/8.png" width=500px/>
+<image src="Notebooks/images/8.png" width=400px/>
 </p>
 
   - **Experiment 8: Modeling on FastText Averaged Document Embeddings**
@@ -129,13 +129,13 @@ The model’s name is such because each document is represented literally as a �
 Word embedding models give us an embedding for each word, how can we use it for downstream ML\DL tasks? one way is to flatten it or use sequential models. A simpler approach is to average all word embeddings for words in a document and generate a fixed-length document level embedding
 
 <p align="center">
-<image src="Notebooks/images/9.png" width=500px/>
+<image src="Notebooks/images/9.png" width=400px/>
 </p>
 
   - **Experiment 9: Combine FastText Vectors + Structured Features and build a model**
 
 <p align="center">
-<image src="Notebooks/images/10.png" width=500px/>
+<image src="Notebooks/images/10.png" width=400px/>
 </p>
 
   - **Experiment 10: Train Classfier with CNN + FastText Embeddings**
@@ -143,24 +143,24 @@ Word embedding models give us an embedding for each word, how can we use it for 
     - Convolutional Neural Network
 
 <p align="center">
-<image src="Notebooks/images/11.png" width=500px/>
+<image src="Notebooks/images/11.png" width=400px/>
 </p>
 
   - **Experiment 11: Train Classfier with LSTM + FastText Embeddings**
 
 <p align="center">
-<image src="Notebooks/images/12.png" width=500px/>
+<image src="Notebooks/images/12.png" width=400px/>
 </p>
 
   - **Experiment 12: Train Classfier with NNLM Universal Embedding Model**
 
 <p align="center">
-<image src="Notebooks/images/13.png" width=500px/>
+<image src="Notebooks/images/13.png" width=400px/>
 </p>
 
   - **Experiment 13: Train Classfier with BERT**
     - Train and Evaluate your BERT model using transformers
 
 <p align="center">
-<image src="Notebooks/images/14.png" width=500px/>
+<image src="Notebooks/images/14.png" width=400px/>
 </p>
