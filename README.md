@@ -2,31 +2,109 @@ This repository is just to show and teach some Sentiment Analysis methods, from 
 
 # Sentiment Analysis E-Commerce Product Reviews NLP
 
-This is a classic NLP problem dealing with data from an e-commerce store focusing on women's clothing. Each record in the dataset is a customer review which consists of the review title, text description and a recommendation 0 or 1) for a product amongst other features
+This is a classic NLP problem dealing with data from an e-commerce store focusing on women's clothing, and based on the customer reviews we have to predict if each of them was a positive or negative recomendation.
 
-Main Objective: Leverage the review text attributes and other features if needed to predict the recommendation (classification)
+![](https://traid.org.uk/wp-content/uploads/2019/02/1800_eac.jpg)
 
-![](https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_11/1548335/clothes-corona-today-main-200313.jpg)
-
-In this case you will want to segment the image, i.e., each pixel of the image is given a label. 
-
-Thus, the task of image segmentation is to train a neural network to output a pixel-wise mask of the image. This helps in understanding the image at a much lower level, i.e., the pixel level. 
-
-Image segmentation has many applications in medical imaging, self-driving cars and satellite imaging to name a few.
+To solve this problem we used different techniques just to see how each of them works and which could be the better approach.
 
 Techniques applied:
-- Data Augmentation
-- U-Net model
-  - Encoder: MobileNetV2 model (Transfer learning)
-  - Decoder: [Pix2pix](https://github.com/tensorflow/examples/blob/master/tensorflow_examples/models/pix2pix/pix2pix.py)
+- Experiment 1: Basic NLP Count based Features & Age, Feedback Count
+- Experiment 2: Features from Sentiment Analysis
+- Experiment 3: Modeling based on Bag of Words based Features - 1-grams
+- Experiment 4: Modeling with Bag of Words based Features - 2-grams
+- Experiment 5: Adding Bag of Words based Features - 3-grams
+- Experiment 6: Adding Bag of Words based Features - 3-grams with Feature Selection
+- Experiment 7: Combining Bag of Words based Features - 3-grams with Feature Selection and the Structured Features
+- Experiment 8: Modeling on FastText Averaged Document Embeddings
+- Experiment 9: Combine FastText Vectors + Structured Features and build a model
+- Experiment 10: Train Classfier with **CNN** + FastText Embeddings & Evaluate Performance on Test Data
+- Experiment 11: Train Classfier with **LSTM** + FastText Embeddings & Evaluate Performance on Test Data
+- Experiment 12: Train Classfier with **NNLM Universal Embedding Model**
+- Experiment 13: Train Classfier with **BERT**
+
 ---
 
 ### Task:
 
-In this competition, you’re challenged to develop an algorithm that automatically removes the photo studio background. This will allow Carvana to superimpose cars on a variety of backgrounds.
+Classify the customer's reviews.
+
+The data is available at https://www.kaggle.com/nicapotato/womens-ecommerce-clothing-reviews from where you can download it.
 
 ---
 ### Methodology
+
+  - **Dataset review**
+    -  Merge all review text attributes (title, text description) into one attribute
+    -  Subset out columns of interest
+    -  Remove all records with no review text
+    -  Build train and test datasets
+
+  - **Experiment 1: Basic NLP Count based Features & Age, Feedback Count**
+
+
+
+
+  - **Experiment 2: Features from Sentiment Analysis**
+
+
+
+
+
+  - **Experiment 3: Modeling based on Bag of Words based Features - 1-grams**
+
+
+
+
+  - **Experiment 4: Modeling with Bag of Words based Features - 2-grams**
+
+
+
+
+  - **Experiment 5: Adding Bag of Words based Features - 3-grams**
+
+
+
+
+  - **Experiment 6: Adding Bag of Words based Features - 3-grams with Feature Selection**
+
+
+
+
+  - **Experiment 7: Combining Bag of Words based Features - 3-grams with Feature Selection and the Structured Features**
+
+
+
+
+  - **Experiment 8: Modeling on FastText Averaged Document Embeddings**
+
+
+
+
+  - **Experiment 9: Combine FastText Vectors + Structured Features and build a model**
+
+
+
+
+  - **Experiment 10: Train Classfier with CNN + FastText Embeddings & Evaluate Performance on Test Data**
+
+
+
+
+  - **Experiment 11: Train Classfier with LSTM + FastText Embeddings & Evaluate Performance on Test Data**
+
+
+
+
+  - **Experiment 12: Train Classfier with NNLM Universal Embedding Model**
+
+
+
+
+  - **Experiment 13: Train Classfier with BERT**
+
+
+
 
   - **Daa Augmentation**
     - The following code performs a simple augmentation of flipping an image. 
